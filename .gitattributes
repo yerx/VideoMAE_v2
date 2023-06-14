@@ -1,1 +1,2 @@
 .pth filter=lfs diff=lfs merge=lfs -text
+models/vit_g_hybrid_pt_1200e_k710_ft.pth filter=lfs diff=lfs merge=lfs -text
