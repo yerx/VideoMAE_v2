@@ -6,7 +6,7 @@ export OMP_NUM_THREADS=1
 
 OUTPUT_DIR='output/vit_g_hybrid_pt_1200e_k710_ft'
 DATA_PATH='dataset/UCF101_subset_basketball'
-MODEL_PATH='models/vit_g_hybrid_pt_1200e_k710.pth.tar'
+MODEL_PATH='models/vit_g_hybrid_pt_1200e_k710.pth'
 
 JOB_NAME=$1
 PARTITION=${PARTITION:-"video"}

@@ -572,8 +572,11 @@ def main(args, ds_init):
                         label_map_path = 'misc/label_710to600.json'
                     elif args.data_set == 'Kinetics-700':
                         label_map_path = 'misc/label_710to700.json'
+                    elif args.data_set == 'Kinetics-710':
+                        label_map_path = 'misc/label_710to710.json'
 
-                    label_map = json.load(open(label_map_path))
+                    # label_map = json.load(open(label_map_path))
+                    label_map = json.load(open('misc/label_710to710.json'))
                     checkpoint_model[k] = checkpoint_model[k][label_map]
                 else:
                     print(f"Removing key {k} from pretrained checkpoint")
